@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Update Tracker Boot Story Status
-        uses: Bekind-Labs/tracker-boot-action/update-story-status@v1.1.4
+        uses: Bekind-Labs/tracker-boot-action/update-story-status@v1.1.5
         if: always()
         with:
           tracker-boot-api-token: ${{ secrets.TRACKER_BOOT_API_TOKEN }}
