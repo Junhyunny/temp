@@ -36,7 +36,9 @@ jobs:
           tracker-boot-api-token: ${{ secrets.TRACKER_BOOT_API_TOKEN }}
           project-id: "100000025"  # Replace with your Tracker Boot project ID
           job-status: ${{ job.status }}
-
+      - name: Failed
+        run: |
+          exit 1
       - name: Failed pipeline
         uses: Bekind-Labs/tracker-boot-action/report-workflow-failure@main
         if: always()
