@@ -43,5 +43,5 @@ jobs:
         with:
           tracker-boot-api-token: ${{ secrets.TRACKER_BOOT_API_TOKEN }}
           project-id: "100000025"  # Replace with your Tracker Boot project ID
-          job-status: "failure"
+          job-status: ${{ job.status }}
           
