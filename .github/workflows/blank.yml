@@ -34,5 +34,5 @@ jobs:
         if: always()
         with:
           tracker-boot-api-token: ${{ secrets.TRACKER_BOOT_API_TOKEN }}
-          project-id: "YOUR_PROJECT_ID"  # Replace with your Tracker Boot project ID
+          project-id: "100000025"  # Replace with your Tracker Boot project ID
           job-status: ${{ job.status }}
